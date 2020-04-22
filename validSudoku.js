@@ -33,8 +33,7 @@ var isValidSudoku = function(board) {
         }
     }
     
-    console.log('rows and cols valid');
-    return;
+   
     while(rowIndex<9){
         let newArr = [];
         for(var i = rowIndex ; i < 3+rowIndex ; i++){
