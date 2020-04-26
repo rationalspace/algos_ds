@@ -100,5 +100,9 @@ class LinkedList{
         prev.next = n;
         n.next = node;
     }
+    deleteNode(node) {
+        node.val = node.next.val;
+        node.next = node.next.next; 
+    }
 }
 module.exports = {Node, LinkedList};
